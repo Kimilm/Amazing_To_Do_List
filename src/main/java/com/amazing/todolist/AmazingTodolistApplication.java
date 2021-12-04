@@ -8,6 +8,8 @@ public class AmazingTodolistApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(AmazingTodolistApplication.class, args);
+
+        
     }
 
 }
