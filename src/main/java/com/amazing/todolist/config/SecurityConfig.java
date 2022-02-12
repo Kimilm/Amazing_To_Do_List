@@ -12,6 +12,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity httpSecurity) throws Exception {
         // 기본 로그인폼 제거
-        httpSecurity.httpBasic().disable();
+        // httpSecurity.httpBasic().disable();
+
+        // 이건 무슨 옵션?
+        // csrf 가 무엇인지는 추후 검색
+        httpSecurity.cors().and();
+        httpSecurity.csrf().disable();
     }
 }
